@@ -99,8 +99,14 @@ p {
   background-position: center center;
 }
 @media screen and (max-width: 768px) {
-  .grid__nature .div {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .grid__nature {
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas:
+      "img-1 img-2 img-3 img-3"
+      "img-4 img-4 img-5 img-6"
+      "img-4 img-4 img-7 img-7";
   }
 }
